@@ -1,0 +1,25 @@
+# Setup pip & Virtual Env
+
+python -m pip install --upgrade pip setuptools virtualenv
+
+# Create the virtual environment named kivy_venv in your current directory
+
+python -m virtualenv kivy_venv
+
+# (Windows) Activate the virtual environment
+
+kivy_venv\Scripts\activate
+
+# (Windows but use bash) Activate the virtual environment
+
+source kivy_venv/Scripts/activate
+
+# To installs the minimum dependencies of Kivy
+
+python -m pip install "kivy[base]" kivy_examples
+python -m pip install --pre "kivy[base]" kivy_examples
+
+# To additionally install Kivy with audio/video support
+
+python -m pip install "kivy[full]" kivy_examples
+
